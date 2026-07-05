@@ -1,0 +1,223 @@
+/* まるごとウェブ制作所 共通スタイル
+   トーン:チラシと同じ「藍色×白・大きい文字・誠実」 */
+
+:root {
+  --ink: #263238;
+  --indigo: #2e4e6b;
+  --indigo-deep: #223b52;
+  --panel: #eef3f7;
+  --line: #c5d2db;
+  --paper: #ffffff;
+  --muted: #56646e;
+  --serif: "BIZ UDPMincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --sans: "BIZ UDPGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--ink);
+  background: var(--paper);
+  overflow-x: hidden;
+}
+img, svg { max-width: 100%; height: auto; }
+a { color: var(--indigo); }
+
+/* ---------- ヘッダー ---------- */
+.site-header {
+  border-top: 6px solid var(--indigo);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.header-inner {
+  max-width: 1000px; margin: 0 auto; padding: 14px 20px 10px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px;
+}
+.site-name {
+  font-family: var(--serif);
+  font-size: 26px; font-weight: 700; letter-spacing: .06em;
+  color: var(--indigo-deep); text-decoration: none;
+}
+.site-tag { font-size: 13px; color: var(--muted); margin: 0; }
+.header-tel {
+  margin-left: auto; text-align: right;
+}
+.header-tel a {
+  display: inline-block;
+  font-size: 24px; font-weight: 700; text-decoration: none;
+  color: var(--indigo-deep); font-variant-numeric: tabular-nums;
+}
+.header-tel .note { font-size: 12px; color: var(--muted); }
+
+.site-nav {
+  max-width: 1000px; margin: 0 auto; padding: 0 12px;
+  display: flex; flex-wrap: wrap;
+}
+.site-nav a {
+  display: block; padding: 10px 14px;
+  font-size: 16px; font-weight: 700; text-decoration: none;
+  color: var(--indigo-deep);
+  border-bottom: 4px solid transparent;
+}
+.site-nav a:hover { background: var(--panel); }
+.site-nav a[aria-current="page"] { border-bottom-color: var(--indigo); }
+
+/* ---------- 共通レイアウト ---------- */
+main { max-width: 1000px; margin: 0 auto; padding: 12px 20px 56px; }
+.section { margin-top: 48px; }
+h1 {
+  font-family: var(--serif);
+  font-size: 34px; letter-spacing: .05em; color: var(--indigo-deep);
+  line-height: 1.4; margin: 28px 0 8px; text-wrap: balance;
+}
+h2 {
+  font-family: var(--serif);
+  font-size: 26px; letter-spacing: .06em; color: var(--indigo-deep);
+  margin: 0 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+}
+h3 { font-size: 20px; color: var(--indigo-deep); margin: 0 0 8px; }
+.lead { font-size: 19px; }
+.muted { color: var(--muted); font-size: 15px; }
+
+/* ---------- 部品 ---------- */
+.btn {
+  display: inline-block;
+  background: var(--indigo); color: #fff;
+  font-size: 18px; font-weight: 700; text-decoration: none;
+  padding: 14px 28px; border-radius: 8px;
+}
+.btn:hover { background: var(--indigo-deep); }
+.btn.ghost {
+  background: #fff; color: var(--indigo-deep);
+  border: 2px solid var(--indigo);
+}
+
+.notice {
+  border: 3px solid var(--indigo); border-radius: 10px;
+  padding: 20px 24px;
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+}
+.notice .badge {
+  font-family: var(--serif);
+  background: var(--indigo); color: #fff;
+  font-size: 20px; font-weight: 700; letter-spacing: .1em;
+  padding: 10px 14px; border-radius: 6px; white-space: nowrap;
+}
+.notice p { margin: 0; flex: 1; min-width: 240px; }
+
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.card {
+  border: 2px solid var(--line); border-radius: 10px;
+  overflow: hidden; background: #fff;
+  display: flex; flex-direction: column;
+}
+.card-head { background: var(--indigo); color: #fff; padding: 14px 20px; }
+.card-head h3 { color: #fff; margin: 0; font-size: 21px; }
+.card-head p { margin: 4px 0 0; font-size: 14px; opacity: .95; }
+.card-body { padding: 16px 20px 20px; flex: 1; }
+.card-body ul { margin: 0; padding-left: 22px; }
+
+.price-line {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  border-bottom: 1px dashed var(--line); padding: 10px 0;
+}
+.price-line:last-child { border-bottom: none; }
+.price-label { font-weight: 700; color: var(--indigo-deep); font-size: 16px; }
+.price-label small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+.price {
+  font-size: 30px; font-weight: 700; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.price small { font-size: 16px; }
+.price .per { font-size: 15px; }
+
+.panel {
+  background: var(--panel); border-radius: 10px;
+  padding: 20px 24px;
+}
+
+table.simple {
+  width: 100%; border-collapse: collapse; font-size: 17px;
+}
+table.simple th, table.simple td {
+  border: 1px solid var(--line); padding: 10px 14px; text-align: left;
+  vertical-align: top;
+}
+table.simple th { background: var(--panel); color: var(--indigo-deep); white-space: nowrap; }
+.table-scroll { overflow-x: auto; }
+
+/* FAQ */
+.faq details {
+  border: 2px solid var(--line); border-radius: 8px;
+  padding: 0; margin-bottom: 12px; background: #fff;
+}
+.faq summary {
+  cursor: pointer; font-weight: 700; font-size: 18px;
+  padding: 14px 18px; color: var(--indigo-deep);
+}
+.faq details[open] summary { border-bottom: 1px solid var(--line); }
+.faq .answer { padding: 12px 18px 16px; margin: 0; }
+
+/* 実績カード */
+.work-thumb { background: var(--panel); display: flex; justify-content: center; padding: 18px 12px 10px; }
+.work-note { font-size: 14px; color: var(--muted); }
+
+/* イラスト入りレイアウト */
+.split { display: flex; gap: 36px; align-items: center; }
+.split .split-text { flex: 1; min-width: 0; }
+.split .illu { flex-shrink: 0; }
+.illu svg { display: block; }
+.illu-center { text-align: center; margin: 0 0 8px; }
+.illu-center svg { display: inline-block; }
+@media (max-width: 700px) {
+  .split { flex-direction: column; gap: 12px; }
+  .split .illu { order: 2; }
+}
+
+/* ---------- お問い合わせ帯(全ページ共通) ---------- */
+.cta-band {
+  background: var(--indigo);
+  color: #fff;
+  margin-top: 64px;
+}
+.cta-inner {
+  max-width: 1000px; margin: 0 auto; padding: 36px 20px;
+  text-align: center;
+}
+.cta-inner .lead-line {
+  font-family: var(--serif);
+  font-size: 24px; margin: 0 0 12px; letter-spacing: .05em;
+}
+.cta-tel {
+  display: inline-block;
+  font-size: 40px; font-weight: 700; color: #fff; text-decoration: none;
+  font-variant-numeric: tabular-nums; letter-spacing: .02em;
+}
+.cta-inner .sub { font-size: 15px; opacity: .9; margin: 8px 0 0; }
+
+/* ---------- フッター ---------- */
+.site-footer {
+  background: var(--indigo-deep); color: #cfdae4;
+  font-size: 14px;
+}
+.footer-inner {
+  max-width: 1000px; margin: 0 auto; padding: 20px;
+  display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between;
+}
+.site-footer a { color: #fff; }
+
+/* ---------- スマホ ---------- */
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  h1 { font-size: 23px; }
+  h2 { font-size: 21px; }
+  .site-name { font-size: 22px; }
+  .header-tel { margin-left: 0; text-align: left; }
+  .price { font-size: 26px; }
+  .cta-tel { font-size: 31px; }
+}
