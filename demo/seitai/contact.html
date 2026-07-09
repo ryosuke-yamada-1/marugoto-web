@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>お問い合わせ・ご予約｜なごみ整体院【〇〇市の整体院】</title>
+<meta name="description" content="なごみ整体院へのご予約・お問い合わせ。フォームは24時間受付。送信後、院から折り返しご連絡し日時を決めます。お電話 00-0000-0000 でも承ります。">
+<meta property="og:title" content="お問い合わせ・ご予約｜なごみ整体院【〇〇市の整体院】">
+<meta property="og:description" content="ご予約・お問い合わせフォーム。送信後、院から折り返しご連絡します。お電話でも承ります。">
+<meta property="og:type" content="article">
+<link rel="icon" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="demo-bar">このサイトは <a href="../../index.html">まるごとウェブ制作所</a> の制作見本です(実在しない整体院です)｜<a href="../../jisseki.html">制作実績にもどる</a></div>
+
+<header class="site-header">
+  <div class="header-inner container">
+    <a class="brand" href="index.html">なごみ整体院<small>〇〇市の整体院</small></a>
+    <nav class="pc-nav" aria-label="メインメニュー">
+      <a href="index.html">ホーム</a>
+      <a href="menu.html">施術メニュー・料金</a>
+      <a href="about.html">院長紹介</a>
+      <a href="access.html">アクセス</a>
+      <a href="contact.html" aria-current="page">ご予約</a>
+    </nav>
+    <div class="header-tel">
+      <a href="tel:0000000000">00-0000-0000</a>
+      <span>受付 9:00-20:00</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">CONTACT</span>
+        <h2>お問い合わせ・ご予約</h2>
+      </div>
+      <p class="lead">ご予約・ご相談は、下のフォームかお電話でお気軽にどうぞ。フォームは24時間受け付けています。</p>
+
+      <div class="form-note">
+        <strong>ご注意ください。</strong>このフォームを送信した時点では、まだご予約は確定していません。院から折り返しご連絡し、日時を決めさせていただきます。
+      </div>
+
+      <!-- ▼▼ 実際のサイトでは、この<form>を PHPメール送信 または Googleフォーム埋め込みに差し替える ▼▼ -->
+      <!-- フォーム項目仕様:
+           ・お名前(必須・一行テキスト)
+           ・お電話番号(必須・一行テキスト)
+           ・メールアドレス(任意・一行テキスト)
+           ・ご希望の日時 第1希望・第2希望(任意・一行テキスト)
+           ・ご来院は(任意・選択:はじめて / 2回目以降)
+           ・ご相談内容・お悩み(必須・複数行テキスト)
+           送信後:「送信しました。院から折り返しご連絡します」を表示し、お客様へ自動返信メールを送る -->
+      <form class="form" action="#" aria-label="ご予約フォーム(見本)">
+        <div>
+          <label for="name">お名前<span class="req">必須</span></label>
+          <input type="text" id="name" name="name" autocomplete="name">
+        </div>
+        <div>
+          <label for="tel">お電話番号<span class="req">必須</span></label>
+          <input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel">
+        </div>
+        <div>
+          <label for="email">メールアドレス<span class="opt">任意</span></label>
+          <input type="email" id="email" name="email" autocomplete="email">
+        </div>
+        <div>
+          <label for="date1">ご希望の日時(第1希望)<span class="opt">任意</span></label>
+          <input type="text" id="date1" name="date1" placeholder="例:7月20日(月)午後2時ごろ">
+        </div>
+        <div>
+          <label for="date2">ご希望の日時(第2希望)<span class="opt">任意</span></label>
+          <input type="text" id="date2" name="date2" placeholder="例:7月21日(火)午前中">
+        </div>
+        <div>
+          <label for="visit">ご来院は<span class="opt">任意</span></label>
+          <select id="visit" name="visit">
+            <option value="">選んでください</option>
+            <option value="first">はじめて</option>
+            <option value="repeat">2回目以降</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">ご相談内容・お悩み<span class="req">必須</span></label>
+          <textarea id="message" name="message" placeholder="気になる症状や、いつごろから痛むかなど、お書きください。"></textarea>
+        </div>
+        <button type="submit" class="btn">この内容で送信する</button>
+        <p class="menu-note">※ これは制作見本のため、送信ボタンは動作しません。実際のサイトでは、送信すると院にメールが届きます。</p>
+      </form>
+      <!-- ▲▲ フォームここまで ▲▲ -->
+
+      <div class="form-note" style="margin-top:32px;border-left-color:var(--main)">
+        お急ぎの方・お電話がご希望の方は、<a href="tel:0000000000"><strong>00-0000-0000</strong></a> へ。<br>受付時間 9:00〜20:00(日曜・祝日休)
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div>
+      <p class="footer-brand">なごみ整体院</p>
+      <p>〒000-0000 〇〇県〇〇市〇〇町1-2-3</p>
+      <p>電話 <a href="tel:0000000000">00-0000-0000</a>／9:00〜20:00　日曜・祝日休</p>
+      <p class="footer-copy">© 2026 なごみ整体院(まるごとウェブ制作所の制作見本)</p>
+    </div>
+    <nav class="footer-nav" aria-label="フッターメニュー">
+      <a href="index.html">ホーム</a>
+      <a href="menu.html">施術メニュー・料金</a>
+      <a href="about.html">院長紹介</a>
+      <a href="access.html">アクセス</a>
+      <a href="contact.html">ご予約</a>
+    </nav>
+  </div>
+</footer>
+
+<nav class="tab-nav" aria-label="メインメニュー">
+  <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 L12 4.5 l8 7"/><path d="M6.5 10 v10 h11 v-10"/></svg><span>ホーム</span></a>
+  <a href="menu.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 h7 l4 4 v13 h-11 z"/><line x1="9.5" y1="12" x2="14.5" y2="12"/><line x1="9.5" y1="16" x2="14.5" y2="16"/></svg><span>料金</span></a>
+  <a href="about.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M5 20 c.5 -4 3.3 -6 7 -6 s6.5 2 7 6"/></svg><span>院長</span></a>
+  <a href="access.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21 s7 -7.5 7 -12 a7 7 0 0 0 -14 0 c0 4.5 7 12 7 12 z"/><circle cx="12" cy="9" r="2.5"/></svg><span>アクセス</span></a>
+  <a href="contact.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><line x1="4" y1="9" x2="20" y2="9"/><line x1="9" y1="3.5" x2="9" y2="6.5"/><line x1="15" y1="3.5" x2="15" y2="6.5"/><path d="M9.5 14 l2 2 l3.5 -3.5"/></svg><span>ご予約</span></a>
+</nav>
+
+</body>
+</html>
