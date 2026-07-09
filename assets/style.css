@@ -167,6 +167,29 @@ table.simple th { background: var(--panel); color: var(--indigo-deep); white-spa
 .work-thumb { background: var(--panel); display: flex; justify-content: center; padding: 18px 12px 10px; }
 .work-note { font-size: 14px; color: var(--muted); }
 
+/* ご依頼の流れ */
+.flow { display: grid; gap: 14px; }
+.flow-step {
+  border: 2px solid var(--line); border-radius: 10px;
+  padding: 16px 20px;
+}
+.flow-head { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.flow-num {
+  flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--indigo); color: #fff;
+  font-family: var(--serif); font-size: 20px; font-weight: 700;
+}
+.flow-head h3 { margin: 0; font-size: 19px; }
+.flow-step p { margin: 6px 0 0; font-size: 16px; line-height: 1.7; }
+.flow-step .who {
+  display: inline-block; min-width: 5.5em; text-align: center;
+  font-size: 13px; font-weight: 700; border-radius: 5px; padding: 1px 8px; margin-right: 8px;
+}
+.flow-step .who.you { background: var(--panel); color: var(--indigo-deep); border: 1.5px solid var(--line); }
+.flow-step .who.me { background: var(--indigo); color: #fff; }
+
 /* イラスト入りレイアウト */
 .split { display: flex; gap: 36px; align-items: center; }
 .split .split-text { flex: 1; min-width: 0; }
